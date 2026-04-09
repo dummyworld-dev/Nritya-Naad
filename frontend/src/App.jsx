@@ -1,0 +1,16 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Features from "./pages/Features";
+import FeaturePage from "./pages/FeaturePage";
+
+export default function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/features" element={<Features />} />
+        <Route path="/feature/:id" element={<FeaturePage />} />
+      </Routes>
+    </Router>
+  );
+}

@@ -1,0 +1,18 @@
+[
+  { "id": "mudra", "name": "Mudra Detection" },
+  { "id": "gallery", "name": "Dance Gallery" },
+  { "id": "academy", "name": "Academy Listing" },
+  { "id": "chatbot", "name": "Chatbot" },
+  { "id": "stories", "name": "User Stories" },
+  { "id": "map", "name": "India Map" },
+  { "id": "upload", "name": "Upload Performance" },
+  { "id": "raga", "name": "Raga Explorer" },
+  { "id": "quiz", "name": "Quiz" },
+  { "id": "event", "name": "Event Listing" },
+  { "id": "reels", "name": "Reels" },
+  { "id": "mindmap", "name": "Mind Map" },
+  { "id": "pitch", "name": "Voice Pitch" },
+  { "id": "karaoke", "name": "Karaoke" },
+  { "id": "visualizer", "name": "Beat Visualizer" },
+  { "id": "swaras", "name": "Learn Swaras" }
+]

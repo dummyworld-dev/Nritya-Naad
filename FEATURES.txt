@@ -1,0 +1,234 @@
+1. Mudra Detection (Bharatanatyam)
+   Description:
+   Detect hand gestures (mudras) using the user’s webcam. The system should try to identify the gesture and display its name.
+
+Expected Output:
+
+* Webcam opens
+* User shows hand gesture
+* System displays detected mudra name (or closest match)
+* Basic feedback like “Detected” or “Try again”
+
+---
+
+2. Dance Forms Gallery
+   Description:
+   Display images of different Indian dance forms provided in the project.
+
+Expected Output:
+
+* Grid of images
+* On click → show name + short description
+* Smooth UI interaction
+
+---
+
+3. Academy Listing
+   Description:
+   Allow academies to add their class details such as name, location, fees, and offerings.
+
+Expected Output:
+
+* Form to add academy
+* List view of academies
+* Each card shows details clearly
+
+---
+
+4. AI Chatbot
+   Description:
+   A chatbot that answers questions related to Indian dance and music.
+
+Expected Output:
+
+* Chat UI
+* User types question
+* Bot responds with relevant answer (static or API-based)
+
+---
+
+5. User Stories (Tag-based)
+   Description:
+   Users can post stories related to dance/music and tag them.
+
+Expected Output:
+
+* Add story form
+* Display stories
+* Filter by tags (e.g., Bharatanatyam, Music, Festival)
+
+---
+
+6. Interactive India Map
+   Description:
+   Clickable map of India where each state shows its famous dance form.
+
+Expected Output:
+
+* Map UI
+* Click on state → show dance info
+* Smooth interaction
+
+---
+
+7. Performance Upload
+   Description:
+   Users can upload images/videos of their performances.
+
+Expected Output:
+
+* Upload button
+* Display uploaded media in gallery
+* Dynamic rendering
+
+---
+
+8. Classical Music Raga Explorer
+   Description:
+   Explore different ragas with details like mood and time of day.
+
+Expected Output:
+
+* List of ragas
+* On click → show info + audio (if available)
+
+---
+
+9. Quiz / Challenge Section
+   Description:
+   Interactive quiz based on dance and music knowledge.
+
+Expected Output:
+
+* Questions displayed
+* User selects answers
+* Final score shown
+
+---
+
+10. Guess the Dance Form
+    Description:
+    Show an image and ask user to identify the dance form.
+
+Expected Output:
+
+* Image displayed
+* Multiple choice options
+* Correct/incorrect feedback
+
+---
+
+11. Identify the Instrument
+    Description:
+    Show instrument image or sound and ask user to identify it.
+
+Expected Output:
+
+* Question UI
+* Options to select
+* Score tracking
+
+---
+
+12. MCQ + Score Tracking
+    Description:
+    General MCQ system with score tracking.
+
+Expected Output:
+
+* Multiple questions
+* Score displayed at end
+* Optional leaderboard
+
+---
+
+13. Event / Workshop Listing
+    Description:
+    Display upcoming dance/music workshops.
+
+Expected Output:
+
+* List of events
+* Each event shows date, location, details
+
+---
+
+14. Event Map Integration
+    Description:
+    Show event locations on a map.
+
+Expected Output:
+
+* Map with markers
+* Click marker → show event details
+
+---
+
+15. Reels Section
+    Description:
+    Vertical scrolling video section similar to reels.
+
+Expected Output:
+
+* Vertical video feed
+* Smooth scrolling
+* Like/comment (optional)
+
+---
+
+16. Mind Map (Dance Forms)
+    Description:
+    Interactive visual map showing relationships between dance forms and regions.
+
+Expected Output:
+
+* Nodes connected visually
+* Click node → show info
+* Interactive UI
+
+---
+
+17. Voice Pitch Detection
+    Description:
+    Detect user's voice pitch and compare to musical notes.
+
+Expected Output:
+
+* Microphone input
+* Show pitch level (high/low or note)
+* Basic feedback
+
+---
+
+18. Karaoke / Lyrics Sync
+    Description:
+    Display lyrics synced with music.
+
+Expected Output:
+
+* Audio plays
+* Lyrics highlighted line-by-line
+* Smooth syncing
+
+---
+
+19. Beat Visualizer
+    Description:
+    Show animated bars or waveform while music plays.
+
+Expected Output:
+
+* Audio player
+* Visual animation reacting to sound
+
+---
+
+20. Learn Swaras Tool
+    Description:
+    Interactive tool to learn musical notes.
+
+Expected Output:
+
+* Buttons: Sa Re Ga Ma Pa Dha Ni
+* On click → corresponding sound plays
+* Simple UI
