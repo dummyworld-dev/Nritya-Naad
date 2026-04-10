@@ -1,19 +1,29 @@
 import React, { useEffect, useRef, useState } from "react";
 import { HandLandmarker, FilesetResolver } from "@mediapipe/tasks-vision";
 
-// Helper to check if a finger is folded based on distance to wrist
-const isFolded = (landmarks, tipIdx, pipIdx, wristIdx = 0) => {
+// Helper to check if a finger is folded (assuming hand is upright)
+const isFingerFolded = (landmarks, tipIdx, pipIdx) => {
   const tip = landmarks[tipIdx];
   const pip = landmarks[pipIdx];
-  const wrist = landmarks[wristIdx];
+  if (!tip || !pip) return false;
   
-  if (!tip || !pip || !wrist) return false;
+  // In MediaPipe, y=0 is top, y=1 is bottom. 
+  // If tip is lower than PIP (larger y), it's folded down.
+  return tip.y > pip.y;
+};
+
+// Helper to check if thumb is folded across the palm
+const isThumbFolded = (landmarks) => {
+  const tip = landmarks[4];
+  const mcp = landmarks[2];
+  const pinkyBase = landmarks[17];
   
-  const distTip = Math.hypot(tip.x - wrist.x, tip.y - wrist.y);
-  const distPip = Math.hypot(pip.x - wrist.x, pip.y - wrist.y);
+  if (!tip || !mcp || !pinkyBase) return false;
   
-  // If the tip is closer to the wrist than the PIP joint, it's folded
-  return distTip < distPip;
+  // If thumb tip is closer to pinky base than the thumb MCP is, it's folded across
+  const tipDist = Math.hypot(tip.x - pinkyBase.x, tip.y - pinkyBase.y);
+  const mcpDist = Math.hypot(mcp.x - pinkyBase.x, mcp.y - pinkyBase.y);
+  return tipDist < mcpDist;
 };
 
 // Basic heuristic logic for Bharatanatyam mudras
@@ -21,12 +31,11 @@ const identifyMudra = (landmarks) => {
   if (!landmarks || landmarks.length !== 21) return "No Hand Detected";
 
   // Check state of each finger
-  // Thumb is tricky side-to-side, so we compare tip (4) to mcp (2)
-  const thumbFolded = isFolded(landmarks, 4, 2);
-  const indexFolded = isFolded(landmarks, 8, 6);
-  const middleFolded = isFolded(landmarks, 12, 10);
-  const ringFolded = isFolded(landmarks, 16, 14);
-  const pinkyFolded = isFolded(landmarks, 20, 18);
+  const thumbFolded = isThumbFolded(landmarks);
+  const indexFolded = isFingerFolded(landmarks, 8, 6);
+  const middleFolded = isFingerFolded(landmarks, 12, 10);
+  const ringFolded = isFingerFolded(landmarks, 16, 14);
+  const pinkyFolded = isFingerFolded(landmarks, 20, 18);
 
   // Mudra rules based on finger states (extended vs folded)
   if (!indexFolded && !middleFolded && !ringFolded && !pinkyFolded && !thumbFolded) {
