@@ -2,6 +2,11 @@
 import { useParams, Link } from "react-router-dom";
 import features from "../data/features.json";
 import Navbar from "../components/Navbar";
+import Upload from "../features/Upload";
+
+const FEATURE_COMPONENTS = {
+  upload: Upload,
+};
 import IndiaMap from "../features/IndiaMap";
 
 const FEATURE_COMPONENTS = {
