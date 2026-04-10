@@ -1,0 +1,70 @@
+[
+  {
+    "keywords": ["mudra", "hastha", "hand gesture"],
+    "answer": "Mudras (hastas) are codified hand gestures in Indian classical dance. Bharatanatyam and other forms use texts like the Abhinaya Darpana; each mudra carries meaning (e.g. pataka, tripataka) and combines with eyes and body for storytelling."
+  },
+  {
+    "keywords": ["bharatanatyam", "bharata natyam", "bhrtnatyam", "bharatnatyam"],
+    "answer": "Bharatanatyam is a South Indian classical dance from Tamil Nadu, rooted in temple tradition. It features araimandi stance, intricate footwork (jatis), and abhinaya (expression), often to Carnatic music."
+  },
+  {
+    "keywords": ["learn bharatanatyam", "how to learn bharatanatyam", "want to learn bharatanatyam", "start bharatanatyam", "bharatanatyam class"],
+    "answer": "Find a teacher trained in an established style (e.g. Kalakshetra or other reputable lineages). Early training focuses on adavus, posture, and tala; later you add jatis and abhinaya. Carnatic music listening helps. Use NrityaNaad’s Academy Listing to discover schools near you."
+  },
+  {
+    "keywords": ["kathak", "katthak", "chakkar", "gharana"],
+    "answer": "Kathak is a North Indian form known for chakkars (spins), rhythmic footwork with tabla, and storytelling. Major gharanas include Jaipur, Lucknow, and Banaras, each with distinct emphasis on nrtta vs abhinaya."
+  },
+  {
+    "keywords": ["learn kathak", "how to learn kathak", "want to learn kathak", "want to learn katthak", "start kathak", "kathak class"],
+    "answer": "Study with a qualified guru or an institution such as Kathak Kendra (Delhi) or a respected local academy. Expect years of work on tatkar, chakkars, thaat, and abhinaya; listen to tabla and Hindustani music. Check NrityaNaad’s Academy Listing for options in your city."
+  },
+  {
+    "keywords": ["kathakali", "kerala dance"],
+    "answer": "Kathakali is a Kerala dance-drama with elaborate makeup and costuming. It draws from Ramayana and Mahabharata episodes, with detailed facial and eye exercise and strong percussion support."
+  },
+  {
+    "keywords": ["odissi", "tribhangi"],
+    "answer": "Odissi from Odisha is known for the tribhangi (three-bend) posture, lyrical torso movement, and sculpturesque poses inspired by temple reliefs."
+  },
+  {
+    "keywords": ["raga", "raag"],
+    "answer": "A raga is a melodic framework in Indian classical music: specific notes, ornamentation (gamaka), and time-of-day or mood associations. Hindustani and Carnatic systems each have hundreds of ragas."
+  },
+  {
+    "keywords": ["tala", "taal", "beat", "rhythm"],
+    "answer": "Tala is the rhythmic cycle in Indian music and dance (e.g. adi tala, teental). It is shown with hand gestures (kriyas) and underpins jatis and compositions."
+  },
+  {
+    "keywords": ["swara", "svara", "note"],
+    "answer": "Swaras are the solfege syllables Sa Ri Ga Ma Pa Da Ni (Carnatic) or Sa Re Ga Ma Pa Dha Ni (Hindustani). Learning swaras builds pitch and raga understanding."
+  },
+  {
+    "keywords": ["natya shastra", "natyashastra"],
+    "answer": "The Natya Shastra, attributed to Bharata Muni, is an ancient treatise on dramaturgy, dance, and music. It classifies rasas, bhavas, and forms the theoretical base for much of Indian performance."
+  },
+  {
+    "keywords": ["carnatic", "karnatak music"],
+    "answer": "Carnatic music is the classical tradition of South India, centred on kriti compositions, ragas, talas, and improvisation (alapana, niraval, swara kalpana)."
+  },
+  {
+    "keywords": ["hindustani", "north indian music"],
+    "answer": "Hindustani classical music emphasises ragas, talas, and forms like khayal and dhrupad, with instrumental traditions (sitar, sarod, tabla) and strong gharana lineages."
+  },
+  {
+    "keywords": ["mohiniyattam", "mohini attam"],
+    "answer": "Mohiniyattam is a graceful Kerala form, often lasya-oriented, with characteristic white-gold costume and swaying, subtle abhinaya."
+  },
+  {
+    "keywords": ["kuchipudi"],
+    "answer": "Kuchipudi from Andhra Pradesh blends fast jatis, narrative, and sometimes theatrical elements; it shares roots with older dance-drama traditions of the region."
+  },
+  {
+    "keywords": ["manipuri"],
+    "answer": "Manipuri dance from Manipur features fluid group patterns, devotional themes (often Vaishnava), and instruments like the pung (drum)."
+  },
+  {
+    "keywords": ["sattriya", "assam dance"],
+    "answer": "Sattriya is a classical form from Assam’s sattra monasteries, codified in the 20th century, with Ojapali influences and strict devotional repertoire."
+  }
+]

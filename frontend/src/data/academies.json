@@ -1,0 +1,10 @@
+[
+  { "id": "1", "name": "Kalakshetra Foundation", "city": "Chennai", "state": "Tamil Nadu", "focus": "Bharatanatyam, Carnatic music", "phone": "+91 44 2491 1836", "area": "Thiruvanmiyur" },
+  { "id": "2", "name": "Kathak Kendra", "city": "New Delhi", "state": "Delhi", "focus": "Kathak, tabla", "phone": "+91 11 2338 3820", "area": "Mandi House" },
+  { "id": "3", "name": "Nrityagram", "city": "Bengaluru", "state": "Karnataka", "focus": "Odissi, ensemble training", "phone": "+91 80 2760 6427", "area": "Hesaraghatta" },
+  { "id": "4", "name": "Gandharva Mahavidyalaya", "city": "New Delhi", "state": "Delhi", "focus": "Hindustani vocal & instruments", "phone": "+91 11 2332 3637", "area": "CP" },
+  { "id": "5", "name": "Attakkalari Centre", "city": "Bengaluru", "state": "Karnataka", "focus": "Contemporary & classical movement", "phone": "+91 80 4153 0467", "area": "Wilson Garden" },
+  { "id": "6", "name": "NCPA", "city": "Mumbai", "state": "Maharashtra", "focus": "Music, dance workshops", "phone": "+91 22 6628 3750", "area": "Nariman Point" },
+  { "id": "7", "name": "Kerala Kalamandalam", "city": "Thrissur", "state": "Kerala", "focus": "Kathakali, Mohiniyattam", "phone": "+91 488 262 4182", "area": "Cheruthuruthy" },
+  { "id": "8", "name": "Prayag Sangeet Samiti", "city": "Prayagraj", "state": "Uttar Pradesh", "focus": "Hindustani music & dance", "phone": "+91 532 242 0853", "area": "Civil Lines" }
+]

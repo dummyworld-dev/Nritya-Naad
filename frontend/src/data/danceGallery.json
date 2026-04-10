@@ -1,0 +1,90 @@
+[
+  {
+    "id": "bharatanatyam",
+    "name": "Bharatanatyam",
+    "nameHi": "भरतनाट्यम्",
+    "region": "Tamil Nadu",
+    "summary": "Geometry, rhythm, and expressive storytelling rooted in the Natya Shastra.",
+    "description": "Known for araimandi posture, intricate footwork, and abhinaya, Bharatanatyam evolved from temple ritual into a global concert form while keeping its devotional core.",
+    "image": "https://images.unsplash.com/photo-1756382616831-998e8baf9675?w=900&q=82&auto=format&fit=crop",
+    "credit": "Prithvi Raj",
+    "creditUrl": "https://unsplash.com/photos/Ivfh1T5Xonw"
+  },
+  {
+    "id": "kathak",
+    "name": "Kathak",
+    "nameHi": "कथक",
+    "region": "North India",
+    "summary": "Swift chakkars, tarana, and kathavachan — dance as rhythmic narrative.",
+    "description": "From storytelling in courts and temples to the tabla-driven virtuosity of today, Kathak balances nrtta (pure dance) with expressive gestures and lightning footwork.",
+    "image": "https://images.unsplash.com/photo-1759141642117-e2591341ff5f?w=900&q=82&auto=format&fit=crop",
+    "credit": "yash rai",
+    "creditUrl": "https://unsplash.com/photos/YjdrzJS83uE"
+  },
+  {
+    "id": "kathakali",
+    "name": "Kathakali",
+    "nameHi": "കഥകളി",
+    "region": "Kerala",
+    "summary": "Grand costuming, facial codex, and night-long mythic drama.",
+    "description": "Kathakali synthesizes music, percussion, and heightened gesture; performers train for years in eye and face control before embodying heroes, demons, and gods.",
+    "image": "https://images.unsplash.com/photo-1691075221845-687ff5614e66?w=900&q=82&auto=format&fit=crop",
+    "credit": "Anantha Krishnan",
+    "creditUrl": "https://unsplash.com/photos/C5aHZmTnB3I"
+  },
+  {
+    "id": "odissi",
+    "name": "Odissi",
+    "nameHi": "ଓଡ଼ିଶୀ",
+    "region": "Odisha",
+    "summary": "Tribhangi line, lyrical torso work, and sculptures come to life.",
+    "description": "Odissi draws from temple relief and mahari tradition; its hallmark is the three-bend stance and flowing, meditative pacing across the stage.",
+    "image": "https://images.unsplash.com/photo-1746983047239-cb817eba7d05?w=900&q=82&auto=format&fit=crop",
+    "credit": "Unsplash contributor",
+    "creditUrl": "https://unsplash.com/photos/DwBAGk8xe1E"
+  },
+  {
+    "id": "kuchipudi",
+    "name": "Kuchipudi",
+    "nameHi": "కూచిపూడి",
+    "region": "Andhra Pradesh & Telangana",
+    "summary": "Lively jatis, drama, and the occasional floor-length solo.",
+    "description": "Named for the village of Kuchipudi, this form blends brisk technical passages with natya; it can include speech, satire, and demanding rhythmic sequences.",
+    "image": "https://images.unsplash.com/photo-1772466910118-2c6a9ccd85ce?w=900&q=82&auto=format&fit=crop",
+    "credit": "Happysurd Photography",
+    "creditUrl": "https://unsplash.com/photos/4zUE5ikOZG4"
+  },
+  {
+    "id": "manipuri",
+    "name": "Manipuri",
+    "nameHi": "মণিপুরী",
+    "region": "Manipur",
+    "summary": "Fluid ensemble work, Pung cholom, and Vaishnava ritual aesthetics.",
+    "description": "Manipuri dance favours continuous, rippling motion and group geometry; the drum and chant anchor both secular stage pieces and temple-linked repertoire.",
+    "image": "https://images.unsplash.com/photo-1650709244890-cc35b30d8036?w=900&q=82&auto=format&fit=crop",
+    "credit": "pavan gupta",
+    "creditUrl": "https://unsplash.com/photos/55da6PBngm4"
+  },
+  {
+    "id": "mohiniyattam",
+    "name": "Mohiniyattam",
+    "nameHi": "മോഹിനിയാട്ടം",
+    "region": "Kerala",
+    "summary": "Lasya-forward grace, white-and-gold costume, and swaying repose.",
+    "description": "Often described as the ‘dance of the enchantress’, Mohiniyattam builds meaning through subtle shifts of weight, eyes, and hands rather than explosive footfire.",
+    "image": "https://images.unsplash.com/photo-1746983062953-74c19d0dfc5d?w=900&q=82&auto=format&fit=crop",
+    "credit": "Unsplash contributor",
+    "creditUrl": "https://unsplash.com/photos/ErkOiljcoik"
+  },
+  {
+    "id": "sattriya",
+    "name": "Sattriya",
+    "nameHi": "সত্ৰীয়া",
+    "region": "Assam",
+    "summary": "Monastic origins on the sattra, Eka Sthanika bhangi, and living bhakti.",
+    "description": "Sattriya was nurtured in Vaishnava monasteries; its repertoire includes ojapali inflections, strict grammar, and an emphasis on devotion over spectacle.",
+    "image": "https://images.unsplash.com/photo-1463592177119-bab2a00f3ccb?w=900&q=82&auto=format&fit=crop",
+    "credit": "pavan gupta",
+    "creditUrl": "https://unsplash.com/photos/_HzlOHmboSk"
+  }
+]

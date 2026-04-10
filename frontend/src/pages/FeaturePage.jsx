@@ -9,6 +9,9 @@ const FEATURE_COMPONENTS = {
 };
 import Academy from "../features/Academy";
 import UserStories from "../components/UserStories";
+import DanceGallery from "../components/DanceGallery";
+import AcademyListing from "../components/AcademyListing";
+import CulturalChatbot from "../components/CulturalChatbot";
 import EventListing from "../components/EventListing";  // ADD THIS IMPORT
 
 const FEATURE_THEMES = {
@@ -38,13 +41,15 @@ export default function FeaturePage() {
   const { id } = useParams();
   const feature = features.find((f) => f.id === id);
   const theme = FEATURE_THEMES[id] || FEATURE_THEMES.mudra;
+  const contentMaxWidth =
+    id === "gallery" ? "1200px" : id === "academy" || id === "chatbot" ? "900px" : "860px";
   const FeatureComponent = FEATURE_COMPONENTS[id] || null;
 
   return (
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
       <Navbar />
 
-      <div style={{ padding: "48px 48px 80px", maxWidth: "860px", margin: "0 auto", width: "100%" }}>
+      <div style={{ padding: "48px 48px 80px", maxWidth: contentMaxWidth, margin: "0 auto", width: "100%" }}>
 
         {/* Breadcrumb */}
         <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "36px" }}>
@@ -112,8 +117,28 @@ export default function FeaturePage() {
             lineHeight: 1.7,
             fontWeight: 300,
           }}>
-            This is your dedicated workspace for the <strong style={{ color: theme.color, fontWeight: 500 }}>{feature?.name}</strong> module.
-            Build your feature UI and logic here, with full access to the NrityaNaad design system and theme.
+            {id === "gallery" ? (
+              <>
+                Curated imagery and short notes on the classical dance traditions of India — part of the{" "}
+                <strong style={{ color: theme.color, fontWeight: 500 }}>{feature?.name}</strong> module in NrityaNaad.
+              </>
+            ) : id === "academy" ? (
+              <>
+                Discover dance and music <strong style={{ color: theme.color, fontWeight: 500 }}>academies</strong> — filter by city, call, or open maps.
+              </>
+            ) : id === "chatbot" ? (
+              <>
+                <strong style={{ color: theme.color, fontWeight: 500 }}>AI-powered</strong> cultural Q&A. Put{" "}
+                <code style={{ fontSize: "13px", background: theme.bg, padding: "2px 6px", borderRadius: "6px" }}>GROQ_API_KEY</code>{" "}
+                (free at console.groq.com) or <code style={{ fontSize: "13px", background: theme.bg, padding: "2px 6px", borderRadius: "6px" }}>OPENAI_API_KEY</code> /{" "}
+                <code style={{ fontSize: "13px", background: theme.bg, padding: "2px 6px", borderRadius: "6px" }}>GEMINI_API_KEY</code> in <code style={{ fontSize: "13px", background: theme.bg, padding: "2px 6px", borderRadius: "6px" }}>backend/.env</code> — restart the server after saving.
+              </>
+            ) : (
+              <>
+                This is your dedicated workspace for the <strong style={{ color: theme.color, fontWeight: 500 }}>{feature?.name}</strong> module.
+                Build your feature UI and logic here, with full access to the NrityaNaad design system and theme.
+              </>
+            )}
           </p>
         </div>
 
@@ -121,7 +146,19 @@ export default function FeaturePage() {
         {FeatureComponent ? (
           <FeatureComponent />
         {/* Implementation area */}
-        {id === "stories" ? (
+        {id === "gallery" ? (
+          <div style={{ marginTop: "8px", width: "100%" }}>
+            <DanceGallery theme={theme} />
+          </div>
+        ) : id === "academy" ? (
+          <div style={{ marginTop: "8px", width: "100%" }}>
+            <AcademyListing theme={theme} />
+          </div>
+        ) : id === "chatbot" ? (
+          <div style={{ marginTop: "8px", width: "100%" }}>
+            <CulturalChatbot theme={theme} />
+          </div>
+        ) : id === "stories" ? (
           <div style={{ marginTop: "32px", width: "100%", display: "flex", justifyContent: "center" }}>
             <UserStories theme={theme} />
           </div>
