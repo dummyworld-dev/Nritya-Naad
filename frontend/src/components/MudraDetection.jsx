@@ -131,21 +131,7 @@ export default function MudraDetection() {
     });
   };
 
-  const startWebcam = useCallback(async () => {
-    try {
-      const stream = await navigator.mediaDevices.getUserMedia({
-        video: { facingMode: "user" }
-      });
-      if (videoRef.current) {
-        videoRef.current.srcObject = stream;
-        videoRef.current.addEventListener("loadeddata", predictWebcam);
-      }
-    } catch (err) {
-      console.error("Webcam error:", err);
-      setMudra("Webcam access denied");
-    }
-  }, []);
-    let active = true;
+  useEffect(() => {
 
     const initModel = async () => {
       try {
@@ -183,86 +169,6 @@ export default function MudraDetection() {
       }
     };
   }, [startWebcam]);
-
-  const predictWebcam = () => {
-    if (!videoRef.current || !handLandmarkerRef.current) return;
-    
-    let lastVideoTime = -1;
-    
-    const renderLoop = () => {
-      const video = videoRef.current;
-      const canvas = canvasRef.current;
-      if (!video || !canvas) return;
-
-      if (video.currentTime !== lastVideoTime) {
-        lastVideoTime = video.currentTime;
-        
-        // Pass video directly to HandLandmarker API
-        const results = handLandmarkerRef.current.detectForVideo(video, performance.now());
-        
-        if (results.landmarks && results.landmarks.length > 0) {
-          const detected = identifyMudra(results.landmarks[0]);
-          setMudra(detected);
-          drawLandmarks(results.landmarks[0]);
-        } else {
-          setMudra("Try again (No hand visible)");
-          clearCanvas();
-        }
-      }
-      
-      requestRef.current = requestAnimationFrame(renderLoop);
-    };
-    
-    requestRef.current = requestAnimationFrame(renderLoop);
-  };
-
-  const clearCanvas = () => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-    const ctx = canvas.getContext("2d");
-    if (!ctx) return;
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-  };
-
-  const drawLandmarks = (landmarks) => {
-    const canvas = canvasRef.current;
-    if (!canvas || !videoRef.current) return;
-    
-    canvas.width = videoRef.current.videoWidth;
-    canvas.height = videoRef.current.videoHeight;
-    
-    const ctx = canvas.getContext("2d");
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    
-    // Draw points
-    ctx.fillStyle = "#FF6B00";
-    ctx.strokeStyle = "#C2185B";
-    ctx.lineWidth = 2;
-    
-    // Connections outline (simplified)
-    const connections = [
-      [0,1],[1,2],[2,3],[3,4], // Thumb
-      [0,5],[5,6],[6,7],[7,8], // Index
-      [5,9],[9,10],[10,11],[11,12], // Middle
-      [9,13],[13,14],[14,15],[15,16], // Ring
-      [13,17],[0,17],[17,18],[18,19],[19,20] // Pinky/base
-    ];
-    
-    ctx.beginPath();
-    for (const [startIdx, endIdx] of connections) {
-      const a = landmarks[startIdx];
-      const b = landmarks[endIdx];
-      ctx.moveTo(a.x * canvas.width, a.y * canvas.height);
-      ctx.lineTo(b.x * canvas.width, b.y * canvas.height);
-    }
-    ctx.stroke();
-
-    for (const point of landmarks) {
-      ctx.beginPath();
-      ctx.arc(point.x * canvas.width, point.y * canvas.height, 4, 0, 2 * Math.PI);
-      ctx.fill();
-    }
-  };
 
   return (
     <div style={{ width: "100%", maxWidth: "600px", margin: "0 auto", position: "relative" }}>
