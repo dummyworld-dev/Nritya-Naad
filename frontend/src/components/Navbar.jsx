@@ -8,6 +8,8 @@ export default function Navbar() {
   const navLinks = [
     { to: "/", label: "Home" },
     { to: "/features", label: "Explore" },
+    { to: "/academies", label: "Academies" },
+    { to: "/quiz", label: "Quiz" },
   ];
 
   return (
@@ -24,7 +26,6 @@ export default function Navbar() {
       height: "68px",
       boxShadow: "0 4px 32px rgba(255,107,0,0.18)",
     }}>
-      {/* Logo */}
       <Link to="/" style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: "10px" }}>
         <div style={{
           width: "38px", height: "38px",
@@ -45,7 +46,6 @@ export default function Navbar() {
         }}>NrityaNaad</span>
       </Link>
 
-      {/* Links */}
       <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
         {navLinks.map(link => (
           <Link key={link.to} to={link.to} style={{
