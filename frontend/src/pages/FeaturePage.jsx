@@ -1,3 +1,4 @@
+// src/pages/FeaturePage.jsx
 import { useParams, Link } from "react-router-dom";
 import features from "../data/features.json";
 import Navbar from "../components/Navbar";
@@ -21,6 +22,10 @@ const FEATURE_THEMES = {
   karaoke: { color: "#00897B", bg: "rgba(0,137,123,0.08)", gradient: "linear-gradient(135deg, #00897B, #004D40)", icon: "Karaoke" },
   visualizer: { color: "#3949AB", bg: "rgba(57,73,171,0.08)", gradient: "linear-gradient(135deg, #3949AB, #1A237E)", icon: "Visualizer" },
   swaras: { color: "#FF6B00", bg: "rgba(255,107,0,0.08)", gradient: "linear-gradient(135deg, #FF6B00, #E85D04)", icon: "Swaras" },
+};
+
+const FEATURE_COMPONENTS = {
+  academy: Academy,
 };
 
 export default function FeaturePage() {
