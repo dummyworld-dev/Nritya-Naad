@@ -82,20 +82,7 @@ Expected Output:
 * Dynamic rendering
 
 ---
-
-8. Quiz / Challenge Section
-   Description:
-   Interactive quiz based on dance and music knowledge.
-
-Expected Output:
-
-* Questions displayed
-* User selects answers
-* Final score shown
-
----
-
-9. Guess the Dance Form
+10. Guess the Dance Form
     Description:
     Show an image and ask user to identify the dance form.
 
@@ -104,21 +91,20 @@ Expected Output:
 * Image displayed
 * Multiple choice options
 * Correct/incorrect feedback
-
 ---
 
-10. Identify the Instrument
-    Description:
-    Show instrument image or sound and ask user to identify it.
+9. Quiz / Challenge Section
+   Description:
+   Interactive quiz based on dance and music knowledge.
 
 Expected Output:
 
-* Question UI
-* Options to select
-* Score tracking
-
+* Questions displayed
+* User selects answers
+* Final score shown
 ---
-11. Event / Workshop Listing
+
+10. Event / Workshop Listing
     Description:
     Display upcoming dance/music workshops.
 
@@ -129,18 +115,7 @@ Expected Output:
 
 ---
 
-12. Event Map Integration
-    Description:
-    Show event locations on a map. [Dynamic Map changing using Online API]
-
-Expected Output:
-
-* Map with markers
-* Click marker → show event details
-
----
-
-13. Reels Section
+11. Reels Section
     Description:
     Vertical scrolling video section similar to reels. [Atleast 4 relevant reels]
 
@@ -152,7 +127,7 @@ Expected Output:
 
 ---
 
-14. Mind Map (Dance Forms)
+12. Mind Map (Dance Forms)
     Description:
     Interactive visual map showing relationships between dance forms and regions.
 
@@ -164,7 +139,7 @@ Expected Output:
 
 ---
 
-15. Voice Pitch Detection
+13. Voice Pitch Detection
     Description:
     Detect user's voice pitch and compare to musical notes.
 
@@ -176,7 +151,7 @@ Expected Output:
 
 ---
 
-16. Karaoke / Lyrics Sync
+14. Karaoke / Lyrics Sync
     Description:
     Display lyrics synced with music.
 
@@ -188,7 +163,7 @@ Expected Output:
 
 ---
 
-17. Beat Visualizer
+15. Beat Visualizer
     Description:
     Show animated bars or waveform while music plays.
 
@@ -199,7 +174,7 @@ Expected Output:
 
 ---
 
-18. Learn Swaras Tool
+16. Learn Swaras Tool
     Description:
     Interactive tool to learn musical notes.
 
